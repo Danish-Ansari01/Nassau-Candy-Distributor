@@ -14,7 +14,7 @@ st.subheader("Product Line Profitability & Margin Performance Analysis")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\Danish\OneDrive\Desktop\Project\Data\Nassau Candy Distributor.csv")
+    df = pd.read_csv("Nassau Candy Distributor.csv")
     
     df['Order Date'] = pd.to_datetime(df['Order Date'], dayfirst=True)
     df['Ship Date'] = pd.to_datetime(df['Ship Date'], dayfirst=True)
